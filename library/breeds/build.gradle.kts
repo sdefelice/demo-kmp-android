@@ -49,6 +49,10 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
+    kotlin {
+        jvmToolchain(17)
+    }
+
     defaultConfig {
         @Suppress("UnstableApiUsage")
         minSdk = kmpLibs.versions.minSdk.get().toInt()
