@@ -3,5 +3,5 @@
 	bidircode = android
 	bidirbranch = main
 	commit = 39c8f0d676bb7b4aa7d86761626bd7a482cd17ee
-	parent = 985c112d00df8a719aef05d25c7429d338c3dce9
+	parent = 59c196246b57202894101ebb1abc77f517a35957
 	remote = git@github.com:sdefelice/demo-kmp-source.git
