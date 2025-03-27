@@ -1,0 +1,31 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  gitportal_check_job:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: gitportal
+      cancel-in-progress: false
+    permissions:
+      contents: write
+    name: Check library for KMP Changes
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
+
+      - name: GitPortal Check
+        id: gp-check
+        uses: touchlab/gp-check@main
+        with:
+          sshPrivateKey: ${{ secrets.GITPORTAL_SSH_KEY }}
+          pullBranch: 'main'
+
+      - name: 'Git Push'
+        continue-on-error: true
+        run: |
+          git push origin
