@@ -6,9 +6,7 @@ pluginManagement {
     }
 }
 
-include(":app")
 
-/*
 dependencyResolutionManagement {
     versionCatalogs {
         create("kmpLibs") {
@@ -20,5 +18,5 @@ dependencyResolutionManagement {
 include(":app", ":breeds", ":analytics")
 project(":breeds").projectDir = File("library/breeds")
 project(":analytics").projectDir = File("library/analytics")
-*/
+
 

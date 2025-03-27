@@ -48,9 +48,8 @@ val GROUP:String by project
 val LIBRARY_VERSION:String by project
 
 dependencies {
-    // Uncomment these
-//    implementation(project(":analytics"))
-//    implementation(project(":breeds"))
+    implementation(project(":analytics"))
+    implementation(project(":breeds"))
     implementation(libs.bundles.app.ui)
     implementation(libs.koin.android)
     coreLibraryDesugaring(libs.android.desugaring)
