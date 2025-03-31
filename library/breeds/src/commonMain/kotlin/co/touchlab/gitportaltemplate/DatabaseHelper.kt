@@ -12,9 +12,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOn
 
-/**
- * Hello from Android!
- */
 internal class DatabaseHelper(
     sqlDriver: SqlDriver,
     private val breedAnalytics: BreedAnalytics,
