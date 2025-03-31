@@ -2,7 +2,6 @@
 	dir = bdir
 	bidircode = android
 	bidirbranch = main
-	commit = a231d8bd089809e3a05a9325d5d4ac076fcb10f3
-	parent = 81e63028b85beab0737dbb4a327eacdb2be29bbc
+	commit = 500f2e1d37061e28587872dab958611d2d55ee8c
+	parent = 2b9d5fceb88e1eb53728a3dc2d5b8c2a518613bd
 	remote = git@github.com:sdefelice/demo-kmp-source.git
-	pullmergecommit = 4f1bb495353b1f3e5eb8f6e7d05c0f11a46b73e9
